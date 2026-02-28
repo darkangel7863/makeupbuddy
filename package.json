@@ -1,0 +1,26 @@
+{
+  "name": "makeupbuddy",
+  "version": "1.0.0",
+  "description": "Makeup checker ",
+  "homepage": "https://github.com/darkangel7863/makeupbuddy#readme",
+  "bugs": {
+    "url": "https://github.com/darkangel7863/makeupbuddy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkangel7863/makeupbuddy.git"
+  },
+  "license": "ISC",
+  "author": "Mohamed Ismail",
+  "type": "commonjs",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "parcel": "^2.16.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4"
+  }
+}

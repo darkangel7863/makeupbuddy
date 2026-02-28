@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="src/scss/main.scss"
+    />
+    <title>MakeUpBuddy - Your Beauty Knowledge Advisor</title>
+    <script>
+      const makeupData = async function () {
+        const response = await fetch(
+          'http://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner',
+        );
+        const data = await response.json();
+        console.log(data[0].api_featured_image);
+        document.querySelector('.picture').src = data[3].api_featured_image;
+      };
+      makeupData();
+    </script>
+  </head>
+  <body></body>
+</html>
