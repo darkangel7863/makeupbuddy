@@ -7,6 +7,19 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="src/scss/main.scss"
     />
@@ -23,5 +36,21 @@
       makeupData();
     </script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">MakeupBuddy</h1>
+      <form>
+        <input
+          type="text"
+          class="header__searchbox"
+          placeholder="... Search for product"
+        />
+      </form>
+      <div class="header__bookmarks">Bookmarks</div>
+    </header>
+    <!-- <img
+      alt=""
+      class="picture"
+    /> -->
+  </body>
 </html>

@@ -1,0 +1,23 @@
+.header {
+  background: #fff;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    margin-left: 2rem;
+  }
+
+  &__bookmarks {
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+  &__searchbox {
+    font-size: 1.2rem;
+    border: none;
+    outline: 2px solid pink;
+    border-radius: 4rem;
+    padding: 1rem 2rem;
+    width: 30rem;
+  }
+}
