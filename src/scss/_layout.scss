@@ -4,9 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &__logo {
-    margin-left: 2rem;
-  }
 
   &__bookmarks {
     font-size: 2rem;
@@ -19,5 +16,16 @@
     border-radius: 4rem;
     padding: 1rem 2rem;
     width: 30rem;
+  }
+  &__logo {
+    max-width: 20%;
+    font-family: 'Lavishly Yours';
+  }
+}
+.heading {
+  &__primary {
+    font-size: 4rem;
+    padding: 4rem 2rem;
+    font-weight: 100;
   }
 }

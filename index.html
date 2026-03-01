@@ -16,7 +16,7 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -30,27 +30,28 @@
           'http://makeup-api.herokuapp.com/api/v1/products.json?product_type=eyeliner',
         );
         const data = await response.json();
-        console.log(data[0].api_featured_image);
-        document.querySelector('.picture').src = data[3].api_featured_image;
+        console.log(data[0]);
       };
       makeupData();
     </script>
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__logo">MakeupBuddy</h1>
-      <form>
-        <input
-          type="text"
-          class="header__searchbox"
-          placeholder="... Search for product"
-        />
-      </form>
-      <div class="header__bookmarks">Bookmarks</div>
-    </header>
-    <!-- <img
+    <div class="container">
+      <header class="header">
+        <h1 class="header__logo heading__primary">MakeupBuddy</h1>
+        <form>
+          <input
+            type="text"
+            class="header__searchbox"
+            placeholder="... Search for product"
+          />
+        </form>
+        <div class="header__bookmarks">Bookmarks</div>
+      </header>
+      <!-- <img
       alt=""
       class="picture"
     /> -->
+    </div>
   </body>
 </html>
