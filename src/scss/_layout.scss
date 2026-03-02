@@ -1,3 +1,5 @@
+@use './abstracts';
+
 .header {
   background: #fff;
   height: 8rem;
@@ -8,14 +10,26 @@
   &__bookmarks {
     font-size: 2rem;
     margin-right: 2rem;
+    cursor: pinter;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    &:hover {
+      background-color: abstracts.$color-primary;
+    }
   }
   &__searchbox {
+    cursor: pinter;
     font-size: 1.2rem;
     border: none;
-    outline: 2px solid pink;
+    outline: 3px solid abstracts.$color-primary;
     border-radius: 4rem;
     padding: 1rem 2rem;
     width: 30rem;
+    transition: all 0.2s ease-in;
+    &:focus {
+      width: 35rem;
+      outline: 4px solid darken(abstracts.$color-primary, 5%);
+    }
   }
   &__logo {
     max-width: 20%;
@@ -28,4 +42,10 @@
     padding: 4rem 2rem;
     font-weight: 100;
   }
+}
+.main-content {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+  height: 85vh;
 }
